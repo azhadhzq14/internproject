@@ -16,7 +16,7 @@
         <!-- breadcrumbs -->
         <nav aria-label="breadcrumb" role="navigation">
           <ol class="breadcrumb">
-
+          {{ Breadcrumbs::render('admin.sekren')}}
           </ol>
         </nav>
         <!-- end breadcrumbs -->
@@ -25,7 +25,7 @@
         <div class="places-buttons">
           <div class="row">
             <div class="col-md-6 ml-auto mr-auto text-center">
-              <h4 class="card-title">
+              <h4 class="card-title"> 
                 SEKOLAH RENDAH
               </h4>
             </div>
@@ -33,13 +33,13 @@
           <div class="row">
             <div class="col-lg-8 ml-auto mr-auto">
               <div class="row">
-                <form class="d-block w-100" method="post">
+              <form class="d-block w-100" method="post">
                   @csrf
                   @foreach ($kurikulums as $kurikulum)
-                    <input class="btn btn-primary btn-lg btn-block w-100" type="submit" name="kurikulum"
+                    <input class="btn btn-info btn-lg btn-block w-100" type="submit" name="kurikulum"
                       value="{{ $kurikulum->kurikulum }}">
                   @endforeach
-                </form>
+              </form>                
               </div>
             </div>
           </div>
@@ -86,16 +86,15 @@
               new DataTable('#Subjek')
             })
           </script>
-
           <div class="row">
             <div class="table-responsive">
               <table class="table" id="Subjek">
-                <thead class="text-primary">
+                <thead>
                   <tr>
-                    <th class="text-center">Bil. </th>
-                    <th>Jenis Modul / Subjek</th>
+                    <td class="text-center"  style="font-weight:bold; color:grey">Bil. </td>
+                    <td  style="font-weight:bold; color:grey">Kategori Modul / Subjek</td>
                     @foreach ($papercategory as $pac)
-                      <th class="text-right"> {{ $pac->paper_kategori }}</th>
+                      <td class="text-center" style="font-weight:bold; color:grey"> {{ $pac->paper_kategori }}</td>
                     @endforeach
                   </tr>
                 </thead>
@@ -106,8 +105,17 @@
                       <td class="text-center">{{ $loop->iteration }}</td>
                       <td>{{ $subjek->subjek }}</td>
                       @foreach ($papercategory as $pk)
-                        <td class="text-right">
-                          {{ isset($pivot[$subjek->id][$pk->id]) ? $pivot[$subjek->id][$pk->id] : 0 }}
+                        <td class="text-center">
+                          <!-- {{ isset($pivot[$subjek->id][$pk->id]) ? $pivot[$subjek->id][$pk->id] : 0 }} -->
+                        @if (isset($pivot[$subjek->id]))
+                          @if(isset($pivot[$subjek->id][$pk->id]))
+                            <!-- {{$pivot[$subjek->id][$pk->id]}} -->
+                          @else
+                          0
+                          @endif
+                          @else
+                          0
+                        @endif
                         </td>
                       @endforeach
                     </tr>
@@ -117,60 +125,6 @@
             </div>
 
           </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         </div>
       </div>
     </div>

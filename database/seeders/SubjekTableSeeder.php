@@ -438,10 +438,326 @@ class SubjekTableSeeder extends Seeder
             ])->paper_kategoris()->attach([4,18,19]);
 
 
-            //6 - KSSM - Kurikulum Standard Sekolah Menengah
+            //5 - KSSM - Kurikulum Standard Sekolah Menengah
             // kategori - Teras
             Subjek::create([
                 'subjek' => 'Bahasa Melayu',
+                'kurikulum_id' => 5,
+                'kategori' => 'Teras',
+            ])->paper_kategoris()->attach([4,5,6,7,9,10,11,12,13,14,16,17,19]); 
+            Subjek::create([
+                'subjek' => 'Bahasa Inggeris',
+                'kurikulum_id' => 5,
+                'kategori' => 'Teras',
+            ])->paper_kategoris()->attach([4,5,6,7,9,10,11,12,13,14,16,17,19]); 
+            Subjek::create([
+                'subjek' => 'Bahasa Cina',
+                'kurikulum_id' => 5,
+                'kategori' => 'Teras',
+            ])->paper_kategoris()->attach([4,5,6,7,9,10,11,12,13,14,16,17,19]); 
+            Subjek::create([
+                'subjek' => 'Bahasa Tamil',
+                'kurikulum_id' => 5,
+                'kategori' => 'Teras',
+            ])->paper_kategoris()->attach([4,5,6,7,9,10,11,12,13,14,16,17,19]); 
+            Subjek::create([
+                'subjek' => 'Matematik',
+                'kurikulum_id' => 5,
+                'kategori' => 'Teras',
+            ])->paper_kategoris()->attach([4,5,6,7,9,10,11,12,13,14,16,17,19]); 
+            Subjek::create([
+                'subjek' => 'Sains',
+                'kurikulum_id' => 5,
+                'kategori' => 'Teras',
+            ])->paper_kategoris()->attach([4,5,6,7,9,10,11,12,13,14,16,17,19]); 
+            Subjek::create([
+                'subjek' => 'Sejarah',
+                'kurikulum_id' => 5,
+                'kategori' => 'Teras',
+            ])->paper_kategoris()->attach([4,5,6,7,9,10,11,12,13,14,16,17,19]); 
+            Subjek::create([
+                'subjek' => 'Pendidikan Islam',
+                'kurikulum_id' => 5,
+                'kategori' => 'Teras',
+            ])->paper_kategoris()->attach([4,5,6,7,9,10,11,12,13,14,16,17,19]); 
+            Subjek::create([
+                'subjek' => 'Pendidikan Moral',
+                'kurikulum_id' => 5,
+                'kategori' => 'Teras',
+            ])->paper_kategoris()->attach([4,5,6,7,9,10,11,12,13,14,16,17,19]); 
+            
+            // kategori - elektif, sub-kategori- sains tulen
+            Subjek::create([
+                'subjek' => 'Biologi',
+                'kurikulum_id' => 5,
+                'kategori' => 'Elektif',
+                'sub_kategori' => 'Sains Tulen',
+            ])->paper_kategoris()->attach([4,5,6,7,9,10,11,12,13,14,16,17,19]); 
+            Subjek::create([
+                'subjek' => 'Kimia',
+                'kurikulum_id' => 5,
+                'kategori' => 'Elektif',
+                'sub_kategori' => 'Sains Tulen',
+            ])->paper_kategoris()->attach([4,5,6,7,9,10,11,12,13,14,16,17,19]); 
+            Subjek::create([
+                'subjek' => 'Fizik',
+                'kurikulum_id' => 5,
+                'kategori' => 'Elektif',
+                'sub_kategori' => 'Sains Tulen',
+            ])->paper_kategoris()->attach([4,5,6,7,9,10,11,12,13,14,16,17,19]); 
+            Subjek::create([
+                'subjek' => 'Matematik Tambahan',
+                'kurikulum_id' => 5,
+                'kategori' => 'Elektif',
+                'sub_kategori' => 'Sains Tulen',
+            ])->paper_kategoris()->attach([4,5,6,7,9,10,11,12,13,14,16,17,19]); 
+
+            //Elektif Sains Gunaan
+            Subjek::create([
+                'subjek' => 'Sains Sukan',
+                'kurikulum_id' => 5,
+                'kategori' => 'Elektif',
+                'sub_kategori' => 'Sains Gunaan',
+            ])->paper_kategoris()->attach([4,5,6,7,9,10,11,12,13,14,16,17,19]); 
+            Subjek::create([
+                'subjek' => 'Sains Rumah Tangga',
+                'kurikulum_id' => 5,
+                'kategori' => 'Elektif',
+                'sub_kategori' => 'Sains Gunaan',
+            ])->paper_kategoris()->attach([4,5,6,7,9,10,11,12,13,14,16,17,19]); 
+            Subjek::create([
+                'subjek' => 'Sains Komputer',
+                'kurikulum_id' => 5,
+                'kategori' => 'Elektif',
+                'sub_kategori' => 'Sains Gunaan',
+            ])->paper_kategoris()->attach([4,5,6,7,9,10,11,12,13,14,16,17,19]); 
+            Subjek::create([
+                'subjek' => 'Pertanian',
+                'kurikulum_id' => 5,
+                'kategori' => 'Elektif',
+                'sub_kategori' => 'Sains Gunaan',
+            ])->paper_kategoris()->attach([4,5,6,7,9,10,11,12,13,14,16,17,19]); 
+            Subjek::create([
+                'subjek' => 'Grafik Komunikasi Teknikal',
+                'kurikulum_id' => 5,
+                'kategori' => 'Elektif',
+                'sub_kategori' => 'Sains Gunaan',
+            ])->paper_kategoris()->attach([4,5,6,7,9,10,11,12,13,14,16,17,19]); 
+            Subjek::create([
+                'subjek' => 'Asas Kelestarian',
+                'kurikulum_id' => 5,
+                'kategori' => 'Elektif',
+                'sub_kategori' => 'Sains Gunaan',
+            ])->paper_kategoris()->attach([4,5,6,7,9,10,11,12,13,14,16,17,19]); 
+            Subjek::create([
+                'subjek' => 'Reka Cipta',
+                'kurikulum_id' => 5,
+                'kategori' => 'Elektif',
+                'sub_kategori' => 'Sains Gunaan',
+            ])->paper_kategoris()->attach([4,5,6,7,9,10,11,12,13,14,16,17,19]); 
+           
+            //Elektif Sastera 
+            Subjek::create([
+                'subjek' => 'Perniagaan',
+                'kurikulum_id' => 5,
+                'kategori' => 'Elektif',
+                'sub_kategori' => 'Sastera',
+            ])->paper_kategoris()->attach([4,5,6,7,9,10,11,12,13,14,16,17,19]); 
+            Subjek::create([
+                'subjek' => 'Ekonomi',
+                'kurikulum_id' => 5,
+                'kategori' => 'Elektif',
+                'sub_kategori' => 'Sastera',
+            ])->paper_kategoris()->attach([4,5,6,7,9,10,11,12,13,14,16,17,19]); 
+            Subjek::create([
+                'subjek' => 'Prinsip Perakaunan',
+                'kurikulum_id' => 5,
+                'kategori' => 'Elektif',
+                'sub_kategori' => 'Sastera',
+            ])->paper_kategoris()->attach([4,5,6,7,9,10,11,12,13,14,16,17,19]); 
+            Subjek::create([
+                'subjek' => 'Pengajian Keusahawanan',
+                'kurikulum_id' => 5,
+                'kategori' => 'Elektif',
+                'sub_kategori' => 'Sastera',
+            ])->paper_kategoris()->attach([4,5,6,7,9,10,11,12,13,14,16,17,19]); 
+            Subjek::create([
+                'subjek' => 'Pendidikan Seni Visual',
+                'kurikulum_id' => 5,
+                'kategori' => 'Elektif',
+                'sub_kategori' => 'Sastera',
+            ])->paper_kategoris()->attach([4,5,6,7,9,10,11,12,13,14,16,17,19]); 
+            Subjek::create([
+                'subjek' => 'Pendidikan Muzik',
+                'kurikulum_id' => 5,
+                'kategori' => 'Elektif',
+                'sub_kategori' => 'Sastera',
+            ])->paper_kategoris()->attach([4,5,6,7,9,10,11,12,13,14,16,17,19]); 
+            Subjek::create([
+                'subjek' => 'Geografi',
+                'kurikulum_id' => 5,
+                'kategori' => 'Elektif',
+                'sub_kategori' => 'Sastera',
+            ])->paper_kategoris()->attach([4,5,6,7,9,10,11,12,13,14,16,17,19]); 
+            Subjek::create([
+                'subjek' => 'Kesusasteraan Melayu',
+                'kurikulum_id' => 5,
+                'kategori' => 'Elektif',
+                'sub_kategori' => 'Sastera',
+            ])->paper_kategoris()->attach([4,5,6,7,9,10,11,12,13,14,16,17,19]); 
+            Subjek::create([
+                'subjek' => 'Kesusasteraan Cina',
+                'kurikulum_id' => 5,
+                'kategori' => 'Elektif',
+                'sub_kategori' => 'Sastera',
+            ])->paper_kategoris()->attach([4,5,6,7,9,10,11,12,13,14,16,17,19]); 
+            Subjek::create([
+                'subjek' => 'Kesusasteraan Tamil',
+                'kurikulum_id' => 5,
+                'kategori' => 'Elektif',
+                'sub_kategori' => 'Sastera',
+            ])->paper_kategoris()->attach([4,5,6,7,9,10,11,12,13,14,16,17,19]); 
+            Subjek::create([
+                'subjek' => 'Kesusasteraan Inggeris',
+                'kurikulum_id' => 5,
+                'kategori' => 'Elektif',
+                'sub_kategori' => 'Sastera',
+            ])->paper_kategoris()->attach([4,5,6,7,9,10,11,12,13,14,16,17,19]); 
+            
+            // Elektif Pengajian Islam
+            Subjek::create([
+                'subjek' => 'Pendidikan Al-Quran & Al-Sunnah',
+                'kurikulum_id' => 5,
+                'kategori' => 'Elektif',
+                'sub_kategori' => 'Pengajian Islam',
+            ])->paper_kategoris()->attach([4,5,6,7,9,10,11,12,13,14,16,17,19]); 
+            Subjek::create([
+                'subjek' => 'Pendidikan Syariah Islamiah',
+                'kurikulum_id' => 5,
+                'kategori' => 'Elektif',
+                'sub_kategori' => 'Pengajian Islam',
+            ])->paper_kategoris()->attach([4,5,6,7,9,10,11,12,13,14,16,17,19]);
+            Subjek::create([
+                'subjek' => 'Tasawwur Islam',
+                'kurikulum_id' => 5,
+                'kategori' => 'Elektif',
+                'sub_kategori' => 'Pengajian Islam',
+            ])->paper_kategoris()->attach([4,5,6,7,9,10,11,12,13,14,16,17,19]);
+            Subjek::create([
+                'subjek' => 'Bahasa Arab',
+                'kurikulum_id' => 5,
+                'kategori' => 'Elektif',
+                'sub_kategori' => 'Pengajian Islam',
+            ])->paper_kategoris()->attach([4,5,6,7,9,10,11,12,13,14,16,17,19]);
+
+            //Elektif Sekolah Seni
+            Subjek::create([
+                'subjek' => 'Muzik',
+                'kurikulum_id' => 5,
+                'kategori' => 'Elektif',
+                'sub_kategori' => 'Sekolah Seni',
+            ])->paper_kategoris()->attach([4,5,6,7,9,10,11,12,13,14,16,17,19]);
+            Subjek::create([
+                'subjek' => 'Seni Halus',
+                'kurikulum_id' => 5,
+                'kategori' => 'Elektif',
+                'sub_kategori' => 'Sekolah Seni',
+            ])->paper_kategoris()->attach([4,5,6,7,9,10,11,12,13,14,16,17,19]);
+            Subjek::create([
+                'subjek' => 'Teater',
+                'kurikulum_id' => 5,
+                'kategori' => 'Elektif',
+                'sub_kategori' => 'Sekolah Seni',
+            ])->paper_kategoris()->attach([4,5,6,7,9,10,11,12,13,14,16,17,19]);
+            Subjek::create([
+                'subjek' => 'Tari',
+                'kurikulum_id' => 5,
+                'kategori' => 'Elektif',
+                'sub_kategori' => 'Sekolah Seni',
+            ])->paper_kategoris()->attach([4,5,6,7,9,10,11,12,13,14,16,17,19]);
+            Subjek::create([
+                'subjek' => 'Komunikasi Visual',
+                'kurikulum_id' => 5,
+                'kategori' => 'Elektif',
+                'sub_kategori' => 'Sekolah Seni',
+            ])->paper_kategoris()->attach([4,5,6,7,9,10,11,12,13,14,16,17,19]);
+            Subjek::create([
+                'subjek' => 'Reka Bentuk',
+                'kurikulum_id' => 5,
+                'kategori' => 'Elektif',
+                'sub_kategori' => 'Sekolah Seni',
+            ])->paper_kategoris()->attach([4,5,6,7,9,10,11,12,13,14,16,17,19]);
+
+            //Elektif Bahasa
+            Subjek::create([
+                'subjek' => 'Bahasa Cina',
+                'kurikulum_id' => 5,
+                'kategori' => 'Elektif',
+                'sub_kategori' => 'Bahasa',
+            ])->paper_kategoris()->attach([4,5,6,7,9,10,11,12,13,14,16,17,19]);
+            Subjek::create([
+                'subjek' => 'Bahasa Tamil',
+                'kurikulum_id' => 5,
+                'kategori' => 'Elektif',
+                'sub_kategori' => 'Bahasa',
+            ])->paper_kategoris()->attach([4,5,6,7,9,10,11,12,13,14,16,17,19]);
+            Subjek::create([
+                'subjek' => 'Bahasa Iban',
+                'kurikulum_id' => 5,
+                'kategori' => 'Elektif',
+                'sub_kategori' => 'Bahasa',
+            ])->paper_kategoris()->attach([4,5,6,7,9,10,11,12,13,14,16,17,19]);
+            Subjek::create([
+                'subjek' => 'Bahasa Kadazandusun',
+                'kurikulum_id' => 5,
+                'kategori' => 'Elektif',
+                'sub_kategori' => 'Bahasa',
+            ])->paper_kategoris()->attach([4,5,6,7,9,10,11,12,13,14,16,17,19]);
+            Subjek::create([
+                'subjek' => 'Bahasa Semai',
+                'kurikulum_id' => 5,
+                'kategori' => 'Elektif',
+                'sub_kategori' => 'Bahasa',
+            ])->paper_kategoris()->attach([4,5,6,7,9,10,11,12,13,14,16,17,19]);
+            Subjek::create([
+                'subjek' => 'Bahasa Perancis',
+                'kurikulum_id' => 5,
+                'kategori' => 'Elektif',
+                'sub_kategori' => 'Bahasa',
+            ])->paper_kategoris()->attach([4,5,6,7,9,10,11,12,13,14,16,17,19]);
+            Subjek::create([
+                'subjek' => 'Bahasa Jerman',
+                'kurikulum_id' => 5,
+                'kategori' => 'Elektif',
+                'sub_kategori' => 'Bahasa',
+            ])->paper_kategoris()->attach([4,5,6,7,9,10,11,12,13,14,16,17,19]);
+            Subjek::create([
+                'subjek' => 'Bahasa Arab',
+                'kurikulum_id' => 5,
+                'kategori' => 'Elektif',
+                'sub_kategori' => 'Bahasa',
+            ])->paper_kategoris()->attach([4,5,6,7,9,10,11,12,13,14,16,17,19]);
+            Subjek::create([
+                'subjek' => 'Bahasa Korea',
+                'kurikulum_id' => 5,
+                'kategori' => 'Elektif',
+                'sub_kategori' => 'Bahasa',
+            ])->paper_kategoris()->attach([4,5,6,7,9,10,11,12,13,14,16,17,19]);
+            Subjek::create([
+                'subjek' => 'Bahasa Jepun',
+                'kurikulum_id' => 5,
+                'kategori' => 'Elektif',
+                'sub_kategori' => 'Bahasa',
+            ])->paper_kategoris()->attach([4,5,6,7,9,10,11,12,13,14,16,17,19]);
+
+            //6 - KSKP - Kurikulum Standard Kelas Peralihan
+            Subjek::create([
+                'subjek' => 'Bahasa Melayu',
+                'kurikulum_id' => 6,
+                'kategori' => 'Teras',
+            ])->paper_kategoris()->attach([4,5,6,7,9,10,11,12,13,14,16,17,19]); 
+            Subjek::create([
+                'subjek' => 'Amalan Bahasa Melayu',
                 'kurikulum_id' => 6,
                 'kategori' => 'Teras',
             ])->paper_kategoris()->attach([4,5,6,7,9,10,11,12,13,14,16,17,19]); 
@@ -451,304 +767,26 @@ class SubjekTableSeeder extends Seeder
                 'kategori' => 'Teras',
             ])->paper_kategoris()->attach([4,5,6,7,9,10,11,12,13,14,16,17,19]); 
             Subjek::create([
-                'subjek' => 'Bahasa Cina',
-                'kurikulum_id' => 6,
-                'kategori' => 'Teras',
-            ])->paper_kategoris()->attach([4,5,6,7,9,10,11,12,13,14,16,17,19]); 
-            Subjek::create([
                 'subjek' => 'Bahasa Tamil',
                 'kurikulum_id' => 6,
                 'kategori' => 'Teras',
             ])->paper_kategoris()->attach([4,5,6,7,9,10,11,12,13,14,16,17,19]); 
             Subjek::create([
-                'subjek' => 'Matematik',
+                'subjek' => 'Bahasa Cina',
                 'kurikulum_id' => 6,
                 'kategori' => 'Teras',
             ])->paper_kategoris()->attach([4,5,6,7,9,10,11,12,13,14,16,17,19]); 
             Subjek::create([
-                'subjek' => 'Sains',
+                'subjek' => 'Pendidikan Jasmani dan Kesihatan',
                 'kurikulum_id' => 6,
                 'kategori' => 'Teras',
-            ])->paper_kategoris()->attach([4,5,6,7,9,10,11,12,13,14,16,17,19]); 
-            Subjek::create([
-                'subjek' => 'Sejarah',
-                'kurikulum_id' => 6,
-                'kategori' => 'Teras',
-            ])->paper_kategoris()->attach([4,5,6,7,9,10,11,12,13,14,16,17,19]); 
-            Subjek::create([
-                'subjek' => 'Pendidikan Islam',
-                'kurikulum_id' => 6,
-                'kategori' => 'Teras',
-            ])->paper_kategoris()->attach([4,5,6,7,9,10,11,12,13,14,16,17,19]); 
-            Subjek::create([
-                'subjek' => 'Pendidikan Moral',
-                'kurikulum_id' => 6,
-                'kategori' => 'Teras',
-            ])->paper_kategoris()->attach([4,5,6,7,9,10,11,12,13,14,16,17,19]); 
-            
-            // kategori - elektif, sub-kategori- sains tulen
-            Subjek::create([
-                'subjek' => 'Biologi',
-                'kurikulum_id' => 6,
-                'kategori' => 'Elektif',
-                'sub_kategori' => 'Sains Tulen',
-            ])->paper_kategoris()->attach([4,5,6,7,9,10,11,12,13,14,16,17,19]); 
-            Subjek::create([
-                'subjek' => 'Kimia',
-                'kurikulum_id' => 6,
-                'kategori' => 'Elektif',
-                'sub_kategori' => 'Sains Tulen',
-            ])->paper_kategoris()->attach([4,5,6,7,9,10,11,12,13,14,16,17,19]); 
-            Subjek::create([
-                'subjek' => 'Fizik',
-                'kurikulum_id' => 6,
-                'kategori' => 'Elektif',
-                'sub_kategori' => 'Sains Tulen',
-            ])->paper_kategoris()->attach([4,5,6,7,9,10,11,12,13,14,16,17,19]); 
-            Subjek::create([
-                'subjek' => 'Matematik Tambahan',
-                'kurikulum_id' => 6,
-                'kategori' => 'Elektif',
-                'sub_kategori' => 'Sains Tulen',
-            ])->paper_kategoris()->attach([4,5,6,7,9,10,11,12,13,14,16,17,19]); 
-
-            //Elektif Sains Gunaan
-            Subjek::create([
-                'subjek' => 'Sains Sukan',
-                'kurikulum_id' => 6,
-                'kategori' => 'Elektif',
-                'sub_kategori' => 'Sains Gunaan',
-            ])->paper_kategoris()->attach([4,5,6,7,9,10,11,12,13,14,16,17,19]); 
-            Subjek::create([
-                'subjek' => 'Sains Rumah Tangga',
-                'kurikulum_id' => 6,
-                'kategori' => 'Elektif',
-                'sub_kategori' => 'Sains Gunaan',
-            ])->paper_kategoris()->attach([4,5,6,7,9,10,11,12,13,14,16,17,19]); 
-            Subjek::create([
-                'subjek' => 'Sains Komputer',
-                'kurikulum_id' => 6,
-                'kategori' => 'Elektif',
-                'sub_kategori' => 'Sains Gunaan',
-            ])->paper_kategoris()->attach([4,5,6,7,9,10,11,12,13,14,16,17,19]); 
-            Subjek::create([
-                'subjek' => 'Pertanian',
-                'kurikulum_id' => 6,
-                'kategori' => 'Elektif',
-                'sub_kategori' => 'Sains Gunaan',
-            ])->paper_kategoris()->attach([4,5,6,7,9,10,11,12,13,14,16,17,19]); 
-            Subjek::create([
-                'subjek' => 'Grafik Komunikasi Teknikal',
-                'kurikulum_id' => 6,
-                'kategori' => 'Elektif',
-                'sub_kategori' => 'Sains Gunaan',
-            ])->paper_kategoris()->attach([4,5,6,7,9,10,11,12,13,14,16,17,19]); 
-            Subjek::create([
-                'subjek' => 'Asas Kelestarian',
-                'kurikulum_id' => 6,
-                'kategori' => 'Elektif',
-                'sub_kategori' => 'Sains Gunaan',
-            ])->paper_kategoris()->attach([4,5,6,7,9,10,11,12,13,14,16,17,19]); 
-            Subjek::create([
-                'subjek' => 'Reka Cipta',
-                'kurikulum_id' => 6,
-                'kategori' => 'Elektif',
-                'sub_kategori' => 'Sains Gunaan',
-            ])->paper_kategoris()->attach([4,5,6,7,9,10,11,12,13,14,16,17,19]); 
-           
-            //Elektif Sastera 
-            Subjek::create([
-                'subjek' => 'Perniagaan',
-                'kurikulum_id' => 6,
-                'kategori' => 'Elektif',
-                'sub_kategori' => 'Sastera',
-            ])->paper_kategoris()->attach([4,5,6,7,9,10,11,12,13,14,16,17,19]); 
-            Subjek::create([
-                'subjek' => 'Ekonomi',
-                'kurikulum_id' => 6,
-                'kategori' => 'Elektif',
-                'sub_kategori' => 'Sastera',
-            ])->paper_kategoris()->attach([4,5,6,7,9,10,11,12,13,14,16,17,19]); 
-            Subjek::create([
-                'subjek' => 'Prinsip Perakaunan',
-                'kurikulum_id' => 6,
-                'kategori' => 'Elektif',
-                'sub_kategori' => 'Sastera',
-            ])->paper_kategoris()->attach([4,5,6,7,9,10,11,12,13,14,16,17,19]); 
-            Subjek::create([
-                'subjek' => 'Pengajian Keusahawanan',
-                'kurikulum_id' => 6,
-                'kategori' => 'Elektif',
-                'sub_kategori' => 'Sastera',
             ])->paper_kategoris()->attach([4,5,6,7,9,10,11,12,13,14,16,17,19]); 
             Subjek::create([
                 'subjek' => 'Pendidikan Seni Visual',
                 'kurikulum_id' => 6,
-                'kategori' => 'Elektif',
-                'sub_kategori' => 'Sastera',
+                'kategori' => 'Teras',
             ])->paper_kategoris()->attach([4,5,6,7,9,10,11,12,13,14,16,17,19]); 
-            Subjek::create([
-                'subjek' => 'Pendidikan Muzik',
-                'kurikulum_id' => 6,
-                'kategori' => 'Elektif',
-                'sub_kategori' => 'Sastera',
-            ])->paper_kategoris()->attach([4,5,6,7,9,10,11,12,13,14,16,17,19]); 
-            Subjek::create([
-                'subjek' => 'Geografi',
-                'kurikulum_id' => 6,
-                'kategori' => 'Elektif',
-                'sub_kategori' => 'Sastera',
-            ])->paper_kategoris()->attach([4,5,6,7,9,10,11,12,13,14,16,17,19]); 
-            Subjek::create([
-                'subjek' => 'Kesusasteraan Melayu',
-                'kurikulum_id' => 6,
-                'kategori' => 'Elektif',
-                'sub_kategori' => 'Sastera',
-            ])->paper_kategoris()->attach([4,5,6,7,9,10,11,12,13,14,16,17,19]); 
-            Subjek::create([
-                'subjek' => 'Kesusasteraan Cina',
-                'kurikulum_id' => 6,
-                'kategori' => 'Elektif',
-                'sub_kategori' => 'Sastera',
-            ])->paper_kategoris()->attach([4,5,6,7,9,10,11,12,13,14,16,17,19]); 
-            Subjek::create([
-                'subjek' => 'Kesusasteraan Tamil',
-                'kurikulum_id' => 6,
-                'kategori' => 'Elektif',
-                'sub_kategori' => 'Sastera',
-            ])->paper_kategoris()->attach([4,5,6,7,9,10,11,12,13,14,16,17,19]); 
-            Subjek::create([
-                'subjek' => 'Kesusasteraan Inggeris',
-                'kurikulum_id' => 6,
-                'kategori' => 'Elektif',
-                'sub_kategori' => 'Sastera',
-            ])->paper_kategoris()->attach([4,5,6,7,9,10,11,12,13,14,16,17,19]); 
-            
-            // Elektif Pengajian Islam
-            Subjek::create([
-                'subjek' => 'Pendidikan Al-Quran & Al-Sunnah',
-                'kurikulum_id' => 6,
-                'kategori' => 'Elektif',
-                'sub_kategori' => 'Pengajian Islam',
-            ])->paper_kategoris()->attach([4,5,6,7,9,10,11,12,13,14,16,17,19]); 
-            Subjek::create([
-                'subjek' => 'Pendidikan Syariah Islamiah',
-                'kurikulum_id' => 6,
-                'kategori' => 'Elektif',
-                'sub_kategori' => 'Pengajian Islam',
-            ])->paper_kategoris()->attach([4,5,6,7,9,10,11,12,13,14,16,17,19]);
-            Subjek::create([
-                'subjek' => 'Tasawwur Islam',
-                'kurikulum_id' => 6,
-                'kategori' => 'Elektif',
-                'sub_kategori' => 'Pengajian Islam',
-            ])->paper_kategoris()->attach([4,5,6,7,9,10,11,12,13,14,16,17,19]);
-            Subjek::create([
-                'subjek' => 'Bahasa Arab',
-                'kurikulum_id' => 6,
-                'kategori' => 'Elektif',
-                'sub_kategori' => 'Pengajian Islam',
-            ])->paper_kategoris()->attach([4,5,6,7,9,10,11,12,13,14,16,17,19]);
 
-            //Elektif Sekolah Seni
-            Subjek::create([
-                'subjek' => 'Muzik',
-                'kurikulum_id' => 6,
-                'kategori' => 'Elektif',
-                'sub_kategori' => 'Sekolah Seni',
-            ])->paper_kategoris()->attach([4,5,6,7,9,10,11,12,13,14,16,17,19]);
-            Subjek::create([
-                'subjek' => 'Seni Halus',
-                'kurikulum_id' => 6,
-                'kategori' => 'Elektif',
-                'sub_kategori' => 'Sekolah Seni',
-            ])->paper_kategoris()->attach([4,5,6,7,9,10,11,12,13,14,16,17,19]);
-            Subjek::create([
-                'subjek' => 'Teater',
-                'kurikulum_id' => 6,
-                'kategori' => 'Elektif',
-                'sub_kategori' => 'Sekolah Seni',
-            ])->paper_kategoris()->attach([4,5,6,7,9,10,11,12,13,14,16,17,19]);
-            Subjek::create([
-                'subjek' => 'Tari',
-                'kurikulum_id' => 6,
-                'kategori' => 'Elektif',
-                'sub_kategori' => 'Sekolah Seni',
-            ])->paper_kategoris()->attach([4,5,6,7,9,10,11,12,13,14,16,17,19]);
-            Subjek::create([
-                'subjek' => 'Komunikasi Visual',
-                'kurikulum_id' => 6,
-                'kategori' => 'Elektif',
-                'sub_kategori' => 'Sekolah Seni',
-            ])->paper_kategoris()->attach([4,5,6,7,9,10,11,12,13,14,16,17,19]);
-            Subjek::create([
-                'subjek' => 'Reka Bentuk',
-                'kurikulum_id' => 6,
-                'kategori' => 'Elektif',
-                'sub_kategori' => 'Sekolah Seni',
-            ])->paper_kategoris()->attach([4,5,6,7,9,10,11,12,13,14,16,17,19]);
-
-            //Elektif Bahasa
-            Subjek::create([
-                'subjek' => 'Bahasa Cina',
-                'kurikulum_id' => 6,
-                'kategori' => 'Elektif',
-                'sub_kategori' => 'Bahasa',
-            ])->paper_kategoris()->attach([4,5,6,7,9,10,11,12,13,14,16,17,19]);
-            Subjek::create([
-                'subjek' => 'Bahasa Tamil',
-                'kurikulum_id' => 6,
-                'kategori' => 'Elektif',
-                'sub_kategori' => 'Bahasa',
-            ])->paper_kategoris()->attach([4,5,6,7,9,10,11,12,13,14,16,17,19]);
-            Subjek::create([
-                'subjek' => 'Bahasa Iban',
-                'kurikulum_id' => 6,
-                'kategori' => 'Elektif',
-                'sub_kategori' => 'Bahasa',
-            ])->paper_kategoris()->attach([4,5,6,7,9,10,11,12,13,14,16,17,19]);
-            Subjek::create([
-                'subjek' => 'Bahasa Kadazandusun',
-                'kurikulum_id' => 6,
-                'kategori' => 'Elektif',
-                'sub_kategori' => 'Bahasa',
-            ])->paper_kategoris()->attach([4,5,6,7,9,10,11,12,13,14,16,17,19]);
-            Subjek::create([
-                'subjek' => 'Bahasa Semai',
-                'kurikulum_id' => 6,
-                'kategori' => 'Elektif',
-                'sub_kategori' => 'Bahasa',
-            ])->paper_kategoris()->attach([4,5,6,7,9,10,11,12,13,14,16,17,19]);
-            Subjek::create([
-                'subjek' => 'Bahasa Perancis',
-                'kurikulum_id' => 6,
-                'kategori' => 'Elektif',
-                'sub_kategori' => 'Bahasa',
-            ])->paper_kategoris()->attach([4,5,6,7,9,10,11,12,13,14,16,17,19]);
-            Subjek::create([
-                'subjek' => 'Bahasa Jerman',
-                'kurikulum_id' => 6,
-                'kategori' => 'Elektif',
-                'sub_kategori' => 'Bahasa',
-            ])->paper_kategoris()->attach([4,5,6,7,9,10,11,12,13,14,16,17,19]);
-            Subjek::create([
-                'subjek' => 'Bahasa Arab',
-                'kurikulum_id' => 6,
-                'kategori' => 'Elektif',
-                'sub_kategori' => 'Bahasa',
-            ])->paper_kategoris()->attach([4,5,6,7,9,10,11,12,13,14,16,17,19]);
-            Subjek::create([
-                'subjek' => 'Bahasa Korea',
-                'kurikulum_id' => 6,
-                'kategori' => 'Elektif',
-                'sub_kategori' => 'Bahasa',
-            ])->paper_kategoris()->attach([4,5,6,7,9,10,11,12,13,14,16,17,19]);
-            Subjek::create([
-                'subjek' => 'Bahasa Jepun',
-                'kurikulum_id' => 6,
-                'kategori' => 'Elektif',
-                'sub_kategori' => 'Bahasa',
-            ])->paper_kategoris()->attach([4,5,6,7,9,10,11,12,13,14,16,17,19]);
 
 
             //7 - KBD- Kurikulum Bersepadu Dini

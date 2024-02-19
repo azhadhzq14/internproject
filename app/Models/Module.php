@@ -8,4 +8,16 @@ use Illuminate\Database\Eloquent\Model;
 class Module extends Model
 {
     use HasFactory;
+
+    protected $table = "modules";
+
+    public function paper_kategori_subjek ()
+    {
+        return $this->belongTo(SubjekPaperKategori::class);
+    }
+
+    public function author ()
+    {
+        return $this->hasMany(author::class);
+    }
 }

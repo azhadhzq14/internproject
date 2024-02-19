@@ -22,15 +22,18 @@ Breadcrumbs::for('admin.prasekolah', function (BreadcrumbTrail $trail) {
     $trail->parent('admin.modulelearning');
     $trail->push('Pra Sekolah', route('admin.prasekolah'));
 });
+
 //Dashboard > Module Learning > Sek Rendah
 Breadcrumbs::for('admin.sekren', function (BreadcrumbTrail $trail) {
     $trail->parent('admin.modulelearning');
     $trail->push('Sekolah Rendah', route('admin.sekren'));
+    
 });
 //Dashboard > Module Learning > Sek Menengah
 Breadcrumbs::for('admin.sekmen', function (BreadcrumbTrail $trail) {
     $trail->parent('admin.modulelearning');
     $trail->push('Sekolah Menengah', route('admin.sekmen'));
+    
 });
 
 

@@ -44,6 +44,18 @@
   <script type="text/javascript" src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
   <!-- CSS Just for demo purpose, don't include it in your project -->
   <link href="{{ asset('assets/demo/demo.css') }}" rel="stylesheet" />
+  <!-- Filter Kategori dan Sub-Kategori bagi Kurikulum id = 
+  6 (KSSM Kurikulum Standard Sekolah Menengah) dan 7(KSRA Kurikulum Sekolah Rendah Agama) -->
+  <style type="text/css">
+    .divider{
+    width: 100%;
+    height: 1px;
+    background: #BBB;
+    margin: 1rem 0;
+
+  }
+
+  </style>
 </head>
 
 <body class="">

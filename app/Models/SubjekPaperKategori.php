@@ -18,7 +18,12 @@ class SubjekPaperKategori extends Model
   }
 
   public function paper_kategori()
-  {
+  { 
     return $this->belongsTo(PaperKategori::class);
+  }
+
+  public function module()
+  {
+    return $this->hasMany(Module::class);
   }
 }

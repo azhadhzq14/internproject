@@ -18,4 +18,8 @@ class author extends Model
         'contact_no_author',
         'alamat'
     ];
+
+    public function module(){
+        return $this->belongsTo(Module::class);
+    }
 }

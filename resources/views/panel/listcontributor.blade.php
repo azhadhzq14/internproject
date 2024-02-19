@@ -60,12 +60,12 @@
             <h4 class="card-title"> Senarai Author/Contributor</h4>
           <div class="table-responsive">
             <table class="table">
-              <thead>
+              <thead class="text-primary">
                 <tr>
-                <th class="text-center">Bil.</th>
-                <th>Nama Author/Contributor </th>
-                <th class="text-right"> Terperinci </th>
-                <th class="text-right"> Padam </th>
+                <td class="text-center">Bil.</td>
+                <td>Nama Author/Contributor </td>
+                <td class="text-right"> Terperinci </td>
+                <td class="text-right"> Padam </td>
                 </tr>
               </thead>
               <!-- display data such as name, the button PAPAR to display details information of author, button PADAM to delete the information of author-->

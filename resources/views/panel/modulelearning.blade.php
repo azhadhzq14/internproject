@@ -35,13 +35,13 @@
             <div class="row">
               <div class="col-md-12">
                 <a href="prasekolah">
-                <button class="btn btn-primary btn-lg btn-block">PRA-SEKOLAH</button>
+                <button class="btn btn-info btn-lg btn-block">PRA-SEKOLAH</button>
                 </a>
                 <a href="sekren">
-                <button class="btn btn-primary btn-lg btn-block">SEKOLAH RENDAH</button>
+                <button class="btn btn-info btn-lg btn-block">SEKOLAH RENDAH</button>
                 </a>
                 <a href="sekmen">
-                <button class="btn btn-primary btn-lg btn-block">SEKOLAH MENENGAH</button>
+                <button class="btn btn-info btn-lg btn-block">SEKOLAH MENENGAH</button>
                 </a>
             </div>
             </div>
